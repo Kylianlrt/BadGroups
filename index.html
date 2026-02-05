@@ -1012,19 +1012,17 @@
     </style>
 </head>
 <body>
+    <!-- Bouton Google -->
+    <div id="g_id_onload"
+         data-client_id="TON_CLIENT_ID"
+         data-callback="handleCredentialResponse">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
 
-    <!-- Bouton Google au tout début -->
-<div id="g_id_onload"
-     data-client_id="193868579643-7ikv8hfpic76lv3acuvuelh9h7qa0kec.apps.googleusercontent.com"
-     data-callback="handleCredentialResponse">
-</div>
+    <div id="user-info"></div>
+    <button id="logout">Se déconnecter</button>
 
-<div class="g_id_signin" data-type="standard"></div>
-
-<div id="user-info"></div>
-<button id="logout">Se déconnecter</button>
-
-    <div class="toast-container" id="toastContainer"></div>
+    <div id="site-content" style="display:none;">   <div class="toast-container" id="toastContainer"></div>
     <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileSidebar()"></div>
 
     <nav class="top-nav">
@@ -2272,6 +2270,7 @@
                 document.getElementById('nom1').focus();
             }
         }
-    </script>
+     </script> 
+    </div>
 </body>
 </html>
